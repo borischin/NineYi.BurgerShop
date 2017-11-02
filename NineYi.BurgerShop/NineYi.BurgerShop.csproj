@@ -49,6 +49,7 @@
     <Compile Include="Burgers\Burger.cs" />
     <Compile Include="Burgers\NewYorkChickenBurger.cs" />
     <Compile Include="Burgers\NewYorkPorkBurger.cs" />
+    <Compile Include="Burgers\TokyoChickenBurger.cs" />
     <Compile Include="Burgers\TaipeiChickenBurger.cs" />
     <Compile Include="Burgers\TaipeiPorkBurger.cs" />
     <Compile Include="Meats\Bacon.cs" />
@@ -63,7 +64,10 @@
     <Compile Include="Veggies\Veggie.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
